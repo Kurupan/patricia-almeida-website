@@ -1,0 +1,523 @@
+
+
+/*======================= Header - NavBar =======================*/
+
+/*------ Menu -------*/
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 71px;
+  background-color: #ffffff;
+  background-size: cover;
+  z-index: 99; /*controla a "profundidade" (eixo Z) dos elementos.*/
+}
+
+nav ul {
+  width: 100%;
+  position: fixed;
+  top:16px;
+  text-align:center;
+  padding: 0;
+}
+
+nav ul li {
+  margin:0 2em;
+  position:relative;
+  display:inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color:#111111;
+  text-transform: uppercase;
+  letter-spacing:1px;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing:1px;
+}
+
+/*----Small Logo----*/
+.navlogo {
+  display: none;
+}
+
+/* ====================== Container - Sections ========================*/
+
+/*------- Section 1 - Big Logo Animation -------*/
+#svg5{
+  height: 88vh;
+}
+
+/*------- Section 2 - Image(hang shirt) -------*/
+.hang-image {
+  background-image: url("../img/hangPersonal.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+/*------ Section 3 - Red Circle Animation ------*/
+.banner {
+  margin-top: 20%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.imgBanner {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  animation-name: rollingCircle;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: inline-block;
+}
+
+@keyframes rollingCircle {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/*------- Section 4 - Article Introduction ------- */
+.intro-section {
+  width: 100%;
+  height: fit-content;
+}
+
+.intro-text {
+  text-align: left;
+  font-size: 2.5em;
+  color: #111111;
+  padding: 8% 19% ;
+  line-height: 40px;
+  letter-spacing: 1px;
+  justify-content: center;
+}
+
+.container-intro {
+  overflow: hidden;
+}
+
+.lineIntro {
+  width: 50%;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #ff2929 ;
+}
+
+.line1 {
+  overflow-x: hidden;
+  margin: 10% auto 0 0;
+}
+
+.line2 {
+  overflow-x: hidden;
+  margin: 0 auto 0 50%;
+}
+/*------ Section 5 - Article Personal Organizer ------*/
+
+.feature-organizer {
+  text-align: left;
+  font-size: 2em;
+  color: #111111;
+  padding: 30px 19%;
+  margin-top: 100px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  height: fit-content;
+  justify-content: center;
+}
+
+.paragraph   {
+  margin: 40px 0;
+  padding: 30px;
+}
+
+.feature-organizer h1 {
+  font-size: 2em;
+  line-height: 50px;
+}
+
+hr {
+  width: 30%;
+  text-align: left;
+  margin: 0 auto 0 0;
+  border: 1px solid;
+  border-color: #f00 ;
+}
+
+ /*------- Section 6 - Card Call for Action Button------- */
+
+.call4action {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  color: #111111;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+  letter-spacing: 1px;
+  height: auto;
+}
+
+.img-call4action {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-call4action {
+  padding-bottom: 35px;
+  margin-bottom: 110px;
+  width: 800px;
+  background-color: #f0eff4;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-call4action h2 {
+  margin: 30px 110px 30px 110px;
+  font-weight: 200;
+}
+
+hr {
+  width: 25%;
+  text-align: left;
+  margin: 0 auto 0 0;
+  border: 1px solid;
+  border-color: #ff2929 ;
+}
+
+.card-call4action p {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.call4action-button {
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 2px solid #222222;
+  border-radius: 10px;
+  padding: 5px;
+  color: #111111;
+  font-weight: bolder;
+  transition: transform 0.6 easy;
+}
+
+.call4action-button:hover {
+  transform: translateY(-15px);
+  background-color: #fffefe;
+  color: #ff1515;
+}
+
+/*=================== Telas Menores - ipad - tablet ( min-width: 481px _ max-width: 870px) =====================*/
+
+@media only screen and (min-width: 481px) and (max-width: 870px){
+
+  /*------ Menu -------*/
+  header {
+    height: 70px;
+  }
+
+  nav ul li {
+    margin:0 1.5em;
+  }
+
+  /*----Small Logo----*/
+  .navlogo {
+    display: none;
+  }
+
+  /* ============ Container - Sections ============*/
+
+  /*--- Section 1 - Big Logo Animation ---*/
+  #svg5{
+    height: 80vh;
+  }
+
+  /*--- Section 2 - Image(hang shirt) ---*/
+  .hang-image {
+    background-image: url(../img/hangPersonalIPAD.svg);
+  }
+
+  /*--- Section 3 - Red Circle Animation ---*/
+  .banner {
+    margin-top: 20%;
+  }
+
+  /*--- Section 4 - Article Introduction ---*/
+  .intro-text{
+  padding: 8% 19%;
+  font-size: 2em;
+  }
+
+  .line1 {
+  margin-top: 20%;
+  }
+  .paragraph   {
+  margin: 20px 0;
+  padding: 10px;
+  }
+
+  /*-- Section 5 - Article Personal Organizer --*/
+  .feature-organizer {
+  padding: 30px 19%;
+  margin-top: 40px;
+  }
+
+  /*--- Section 6 - Card Call for Action Button--- */
+  .call4action {
+  font-size: 1.3em;
+  }
+
+  .card-call4action {
+  width: 600px;
+  }
+
+  .card-call4action h2 {
+  margin: 20px 72px 20px 72px;
+  font-weight: 400;
+  }
+
+  .card-call4action p {
+  font-size: 1.3em;
+  }
+}
+
+/*=================== MOBILE (max-width: 695px) =====================*/
+
+/*-------- MenuIcon - Just Mobile -------*/
+#menu-icon {
+  position: relative;
+  margin: 20px 85%;
+  position: absolute;
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+  padding: 0;
+}
+
+@media (max-width: 695px) {
+
+  /*------ Menu -------*/
+  #menu-icon{
+    display: block;
+  }
+
+  header {
+    color: #ff2929;
+    height: 80px;
+  }
+  /*---- Small Logo ----*/
+  .navlogo {
+    display: none;
+  }
+
+  nav{
+    display: none;
+    position: absolute;
+    top: 10em;
+    width: 95%;
+    height: 500px;
+    background-color: #f0eff4;
+    border: 2px #111111 solid;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 2%;
+  }
+
+  nav ul {
+    display: grid;
+    gap: 7em;
+    position: absolute;
+    margin-right: 4em;
+    margin-top: 4em;
+  }
+
+  nav ul li a {
+    font-size: 1.8rem;
+    position: relative;
+    padding: 0;
+    margin: 20px;
+  }
+
+  section {
+    display: contents;
+  }
+
+  /*--- Section 1 - Big Logo Animation ---*/
+  #svg5{
+    height: 70vh;
+  }
+
+  /*--- Section 2 - Image(hang shirt) ---*/
+  .hang-image {
+    background-image: url(../img/hangPersonalMobile2.svg);
+  }
+
+  /*--- Section 3 - Red Circle Animation ---*/
+  .banner {
+      margin: 20% auto 10% auto;
+    }
+
+  .imgBanner {
+    width: 300px;
+    height: 300px;
+    animation-duration: inherit;
+    }
+
+  /*--- Section 4 - Article Introduction ---*/
+  .intro-section {
+    width: 100%;
+  }
+
+  .intro-text{
+    font-size: 1.8em;
+    padding: 8%;
+    line-height: 30px;
+    letter-spacing: 1px;
+    justify-content: center;
+  }
+
+  .paragraph {
+    margin: 10px;
+    padding: 15px 20px;
+  }
+
+  /*-- Section 5 - Article Personal Organizer --*/
+  .feature-organizer {
+    font-size: 1.8em;
+  }
+
+  .feature-organizer h1 {
+    font-size: 1em;
+    line-height: 30px;
+  }
+
+  /*--- Section 6 - Card Call for Action Button--- */
+  .call4action {
+    font-size: 1.3em;
+  }
+
+  .card-call4action {
+    width: 320px;
+    margin: 20px 10px;
+  }
+
+  .card-call4action h2 {
+    font-size: 1.1em;
+    margin: 20px 20px 20px 20px;
+    font-weight: 400;
+  }
+
+  .card-call4action p {
+    font-size: 1.1em;
+  }
+
+  .call4action-button {
+    color: #ff1e1e;
+  }
+}
+
+/*=================== bigLOGO Animation ===================*/
+
+
+#svg5 {
+  margin: 6% 0% 10% 0%;
+  display:block;
+}
+
+/*   Animation Vertical Lines   */
+
+@keyframes SlideToSideVertical {
+  from {
+    transform: translateX(900px);
+  }
+
+  to {
+    transform: translateX(162px);
+  }
+}
+
+#path1 {
+  animation-name: SlideToSideVertical;
+  animation-duration: 0.5s ;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction:normal;
+  animation-fill-mode: both;
+}
+
+#path2 {
+  animation: SlideToSideVertical 1s ease-in 0s 1 normal both;
+}
+
+#path3 {
+  animation: SlideToSideVertical 1.5s ease-in 0s 1 normal both;
+}
+
+#path4 {
+  animation: SlideToSideVertical 2s ease-in 0s 1 normal both;
+}
+
+/*    Animation Horizontal Lines   */
+
+@keyframes SlideToSideHorizontal {
+
+
+  from {
+    transform: translateX(-600px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+#path11 {
+  animation: SlideToSideHorizontal 0.5s ease-in 0s 1 normal both;
+}
+
+#path12 {
+  animation: SlideToSideHorizontal 1s ease-in 0s 1 normal both;
+}
+
+#path13 {
+  animation: SlideToSideHorizontal 1.5s ease-in 0s 1 normal both;
+}
+
+#path14 {
+  animation: SlideToSideHorizontal 2s ease-in 0s 1 normal both;
+}
+
+/*       Animation Name - Patricia Almeida        */
+
+@keyframes fade-inout {
+  100% { opacity: 1;}
+    0% { opacity:0 }
+}
+
+#textName {
+  animation: fade-inout 10s;
+  animation-timing-function: cubic-bezier(0.5, 0.5, 0.2, 5)
+}
+
+

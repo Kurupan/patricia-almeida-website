@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="br">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/base.css" type="text/css">
+      <link rel="stylesheet" href="css/other_pages.css" type="text/css">
+      <link rel="stylesheet" href="css/contato.css" type="text/css">
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+      <title>Patricia Almeida</title>
+      <script language="javascript" src="js/script.js"></script>
+   </head>
+        <body>
+
+            <div class="wrapper">
+               <header>
+                  <!--Mobile menu-->
+                  <div class="menu-btn" id="menu-icon">
+                     <i class='bx bx-dots-vertical' onclick="menuShow()"></i>
+                  </div>
+
+                  <a class="navlogo" href="index.html"><img src="img/logoMedium.svg" alt="Patricia Almeida Logo"></a>
+                  <nav id="menuContent">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="servicos.html">Serviços</a></li>
+                        <li><a href="galeria.html">galeria</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html" class="active">Contato</a></li>
+                     </ul>
+                  </nav>
+               </header>
+               <section>
+                  <section class="corpoContato" id="scroll-top-page">
+                     <h1>Venha comigo desenhar soluções</h1>
+                     <hr>
+
+                     <h2>Estou pronta para ouvir você. <br> Seja para esclarecer dúvidas ou conhecer mais sobre meus serviços.</h2>
+
+                     <form name="contato" action="https://api.web3forms.com/submit" method="POST">
+                         <fieldset class="identificacao">
+                           <input type="hidden" name="access_key" value="b7782fa3-905a-4259-8cbb-e4d18ec8f793"><!--value="ACCESS KEY"-->
+
+                           <label for="nome">Nome:</label>
+                           <input type="text" name="name" placeholder="Nome Sobrenome" required >
+
+                           <label for="email">E-mail:</label>
+                           <input type="email" name="mail" placeholder="exemplo@mail.com">
+
+                           <label for="msg">Telefone:</label>
+                           <input type="tel" name="fone" placeholder="(xx) xxxxx-xxxx">
+
+                           <label for="msg">Mensagem:</label>
+                           <textarea name="message" placeholder="Mensagem" maxlength="500" required></textarea>
+
+                           <button class="botao" type="submit">Enviar</button>
+                         </fieldset>
+                     </form>
+                     <a class="wp-contato" href="https://api.whatsapp.com/send?phone=11997443711&text=sua%20mensagem" target="_blank"><img id="wp-img" src="img/wp.png" alt="icon - Link "> <img id="wpMob-img"  src="img/wpMob.png" alt=""></a>
+               </section>
+               <footer id="footer">
+                  <div class="btn-scroll-parent">
+                     <a href="#scroll-top-page"><i class='bx bx-chevrons-up bx-fade-up btn-scroll-back-top'></i></a>
+                  </div>
+                  <div class="footer-container">
+                     <div class="img-footer">
+                        <a href="index.html"><img src="img/LOGOchoosed-ghostWhiteSmall.png" alt=""></a>
+                     </div>
+                     <div class="social">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="img/icons8-instagram.svg" alt="icon - Link Instagram"></a>
+                        <a href="contato.html" target=""><img src="img/icons8-email.svg" alt="icon - Link - e-mail"></a>
+                        <a href="https://api.whatsapp.com/send?phone=11997443711&text=sua%20mensagem" target="_blank"><img src="img/icons8-whatsapp.svg" alt="icon - Link "></a>
+                     </div>
+                     <div class="copy-dev">
+                        <p>Copyright &copy;2021; Designed by <span class="designer">Savana Tezza</span></p>
+                     </div>
+                  </div>
+               </footer>
+            </div>
+        </body>
+</html>

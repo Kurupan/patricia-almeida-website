@@ -1,0 +1,183 @@
+
+.sobre {
+    text-align: left;
+    font-size: 2em;
+    color: #111111;
+    padding: 30px 19%;
+    margin-top: 100px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    height: fit-content;
+    justify-content: center;
+}
+
+.img-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    width: 40%;
+    border-radius: 50%;
+    border-style: inset;
+    border-color: #f0eff4
+}
+
+h1 {
+    margin-top: 60px;
+    font-size: 2em;
+    line-height: 50px;
+}
+
+hr {
+    width: 24%;
+    text-align: left;
+    margin: 40px auto 0 0;
+    border: 1px solid;
+    border-color: #f00 ;
+}
+
+paragraph   {
+    margin: 40px 0;
+    padding: 30px;
+}
+
+.contato {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+    color: #111111;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+    height: auto;
+
+}
+
+.card_contato {
+    padding-bottom: 35px;
+    margin-bottom: 110px;
+    width: 800px;
+    background-color: #f0eff4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card_contato h2 {
+    margin: 30px 110px 30px 110px;
+    font-weight: 200;
+    font-size: 2.5em;
+}
+
+hr {
+    width: 25%;
+    text-align: left;
+    margin: 0 auto 0 0;
+    border: 1px solid;
+    border-color: #ff2929 ;
+ }
+
+.card_contato p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.card_button {
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 2px solid #222222;
+    border-radius: 10px;
+    padding: 5px;
+    color: #111111;
+    font-weight: bolder;
+    transition: transform 0.6 easy;
+}
+
+.card_button:hover {
+    transform: translateY(-15px);
+    background-color: #fffefe;
+    color: #ff2929;
+}
+
+/*========== Telas Menores - ipad - tablet ( min-width: 481px _ max-width: 870px) ==========*/
+
+@media only screen and (min-width: 481px) and (max-width: 1163px){
+
+
+    .img {
+    width: 50%;
+    }
+
+    .contato {
+        font-size: 1.4em;
+    }
+
+    .card_contato {
+        width: 690px;
+    }
+
+    .card_contato p {
+        font-size: 1.6em;
+    }
+
+    .card_button {
+        color: #ff1e1e;
+    }
+ }
+
+ /*=========== MOBILE (max-width: 695px) =============*/
+
+ @media (max-width: 695px) {
+
+    h1 {
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .sobre {
+        margin: 100px 0 0 auto;
+        padding: 35px 0 0 0;
+    }
+
+    .paragraph   {
+        margin: 10px;
+        padding: 15px 20px;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .contato {
+        font-size: 1.4em;
+    }
+
+    .card_contato {
+        width: 320px;
+    }
+
+    .card_contato h2 {
+        font-size: 1.2em;
+        margin: 12% 0 7% 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .card_contato p {
+        font-size: 1em;
+    }
+
+    .card_button {
+        color: #ff1e1e;
+    }
+}

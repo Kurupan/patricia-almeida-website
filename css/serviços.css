@@ -1,0 +1,227 @@
+
+
+
+.servicos h1 {
+   font-size: 2.5em;
+   margin-top: 0;
+   padding-bottom: 10px;
+}
+
+p {
+   font-size: 1.6em;
+}
+
+.servicos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin-top: 70px;
+}
+
+.container-cards {
+   width: 1150px;
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.container-cards .card {
+   position: relative;
+   padding: 10px;
+   width: 500px;
+   height: fit-content;
+   background-color: white;
+   margin: 20px;
+   overflow: hidden;
+   border-radius: 20px;
+   text-align: center;
+   line-height: 25px;
+   letter-spacing: 1px;
+   background-color: #f0eff4;
+   }
+
+.card img {
+   width: 40%;
+}
+
+.content1 {
+   margin: 0 20px 0 20px;
+}
+.content2 {
+   margin: 0 20px 68px 20px;
+}
+.content3 {
+   margin: 0 20px 30px 20px;
+}
+.content4 {
+   margin: 0 20px 52px 20px;
+}
+.content5 {
+   margin: 0 20px 0 20px;
+}
+.content6 {
+   margin: 0 20px 68px 20px;
+}
+
+.contato {
+   margin-top: 100px;
+   width: 100%;
+   text-align: center;
+   font-size: 1.4em;
+   color: #111111;
+   display: flex;
+   justify-content: center;
+   line-height: 30px;
+   letter-spacing: 1px;
+   height: auto;
+
+}
+
+.card_contato {
+   padding-bottom: 35px;
+   margin-bottom: 110px;
+   width: 800px;
+   background-color: #f0eff4;
+   border-radius: 20px;
+   overflow: hidden;
+}
+
+.card_contato h2 {
+   margin: 30px 110px 30px 110px;
+   font-weight: 200;
+   font-size: 2.5em;
+}
+
+hr {
+   width: 25%;
+   text-align: left;
+   margin: 0 auto 0 0;
+   border: 1px solid;
+   border-color: #ff2929 ;
+}
+
+.card_contato p {
+   font-size: 1.2em;
+   font-weight: 600;
+   margin-bottom: 30px;
+   margin-top: 30px;
+}
+.card_button {
+   text-decoration: none;
+   background-color: #ffffff;
+   border: 2px solid #222222;
+   border-radius: 10px;
+   padding: 5px;
+   color: #111111;
+   font-weight: bolder;
+   transition: transform 0.6 easy;
+}
+
+.card_button:hover {
+   transform: translateY(-15px);
+   background-color: #fffefe;
+   color: #ff1515;
+}
+
+/*========== Telas Menores - ipad - tablet ( min-width: 481px _ max-width: 870px) ==========*/
+
+@media only screen and (min-width: 481px) and (max-width: 1163px){
+
+   .servicos h1 {
+      font-size: 2.4em;
+   }
+
+   p {
+      font-size: 1.4em;
+   }
+
+   .container-cards {
+      width: 100%;
+   }
+
+   .container-cards .card {
+      width: 300px;
+      min-height: fit-content;
+      }
+
+   .content2 {
+         margin-bottom: 140px;
+   }
+   .content3 {
+         margin-bottom: 66px;
+   }
+   .content4 {
+         margin-bottom: 90px;
+   }
+   .content5 {
+         margin-bottom: 44px;
+   }
+   .content6 {
+         margin-bottom: 94px;
+   }
+
+   .card_contato {
+      width: 690px;
+   }
+
+   .card_contato p {
+      font-size: 1.6em;
+   }
+
+   .card_button {
+      color: #ff1e1e;
+   }
+}
+
+/*=========== MOBILE (max-width: 695px) =============*/
+
+@media (max-width: 695px) {
+
+   .servicos h1 {
+      font-size: 2em;
+   }
+
+   p {
+      font-size: 1.5em;
+   }
+
+   .container-cards {
+      width: 100%;
+      padding: 10px 0;
+   }
+
+   .container-cards .card {
+      width: 290px;
+      min-height: 52vh;
+      }
+
+   .card img {
+      width: 30%;
+   }
+
+   .contato {
+      font-size: 1.4em;
+   }
+
+   .card_contato {
+      width: 320px;
+   }
+
+   .card_contato h2 {
+      font-size: 1.2em;
+      margin: 12% 0 7% 0;
+      padding: 0;
+      text-align: center;
+   }
+
+   .card_contato p {
+      font-size: 1.1em;
+   }
+
+   .card_button {
+      color: #ff1e1e;
+   }
+}
